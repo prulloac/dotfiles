@@ -1,0 +1,14 @@
+[user]
+	email = pablo.ulloac@usach.cl
+	name = Pablo Ulloa
+[core]
+	editor = code
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[credential]
+	helper = "!f() { /home/vscode/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node /tmp/vscode-remote-containers-cf4bed14-d3ec-45e3-9408-bc46e8a8de3a.js git-credential-helper $*; }; f"
+[safe]
+	directory = /workspaces/leetcode-exercises-python
