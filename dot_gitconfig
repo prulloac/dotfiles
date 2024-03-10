@@ -3,6 +3,7 @@
 	name = Pablo Ulloa
 [core]
 	editor = code
+	attributesfile = /home/vscode/.gitattributes
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -16,3 +17,5 @@
   tool = vscode
 [mergetool "vscode"]
   cmd = code --wait $MERGED
+[safe]
+	directory = *
