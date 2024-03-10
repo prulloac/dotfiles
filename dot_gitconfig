@@ -19,3 +19,7 @@
   cmd = code --wait $MERGED
 [safe]
 	directory = *
+[credential]
+	helper = "!f() { /home/vscode/.vscode-server/bin/1e790d77f81672c49be070e04474901747115651/node /tmp/vscode-remote-containers-0e866cb8-c57b-4af3-b28f-d7935dd62cd4.js git-credential-helper $*; }; f"
+[init]
+	defaultBranch = main
